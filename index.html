@@ -4,6 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Strony.11 • Strony z efektem WOW</title>
+
+  
+  <link rel="icon" href="https://i.imgur.com/0m9Yh0I.png" type="image/png" sizes="512x512">
+  <link rel="icon" href="https://i.imgur.com/0m9Yh0I.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="https://i.imgur.com/0m9Yh0I.png" sizes="180x180">
+
   <style>
     * { margin:0; padding:0; box-sizing:border-box; }
     body {
@@ -13,7 +19,6 @@
       line-height: 1.6;
       overflow-x: hidden;
     }
-
     #bg-canvas { position: fixed; inset: 0; z-index: -2; }
     .gradient-overlay {
       position: fixed; inset: 0; z-index: -1;
@@ -23,9 +28,8 @@
     }
     @keyframes gradientFlow {
       0%,100% { background-position: 0% 50%; }
-      50%     { background-position: 100% 50%; }
+      50% { background-position: 100% 50%; }
     }
-
     header {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -39,7 +43,6 @@
       transition: all 0.4s;
     }
     header.scrolled { padding: 0.8rem 5%; background: rgba(10,10,31,0.95); }
-
     .logo {
       font-size: 1.9rem;
       font-weight: 800;
@@ -55,7 +58,6 @@
       transform: scale(1.08);
       text-shadow: 0 0 25px rgba(167,139,250,0.7);
     }
-
     nav a {
       color: #d0d0ff;
       text-decoration: none;
@@ -64,10 +66,8 @@
       transition: 0.4s;
     }
     nav a:hover, nav a.active { color: #00eaff; text-shadow: 0 0 15px #00eaff; }
-
     section { min-height: 100vh; padding: 140px 5% 80px; }
     .container { max-width: 1200px; margin: 0 auto; }
-
     h1, h2 {
       background: linear-gradient(90deg, #a78bfa, #60a5fa, #f472b6);
       -webkit-background-clip: text;
@@ -77,10 +77,8 @@
     }
     h1 { font-size: clamp(3.5rem, 9vw, 7rem); margin-bottom: 1.5rem; }
     h2 { font-size: 3.2rem; margin: 2rem 0 3rem; }
-
     .hero { text-align: center; }
     .subtitle { font-size: 1.6rem; max-width: 800px; margin: 0 auto 2.5rem; opacity: 0.9; }
-
     .btn {
       display: inline-block;
       padding: 1rem 2.5rem;
@@ -95,11 +93,10 @@
     }
     .btn:hover { transform: translateY(-6px) scale(1.05); box-shadow: 0 20px 50px rgba(124,58,237,0.6); }
     .btn-pink { background: linear-gradient(45deg, #ec4899, #f43f5e); }
-
-    .features { 
-      display: grid; 
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
-      gap: 2.5rem; 
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.5rem;
     }
     .card {
       background: rgba(30,30,60,0.55);
@@ -114,8 +111,7 @@
       border-color: #a78bfa;
       box-shadow: 0 25px 60px rgba(167,139,250,0.3);
     }
-
-    
+   
     .pricing-section {
       text-align: center;
     }
@@ -162,8 +158,7 @@
       opacity: 0.75;
       color: #e0e0ff;
     }
-
-    
+   
     .contact-card {
       background: rgba(30,30,60,0.65);
       backdrop-filter: blur(14px);
@@ -193,7 +188,7 @@
     textarea {
       min-height: 140px;
       height: 160px;
-      resize: vertical; 
+      resize: vertical;
       line-height: 1.5;
     }
     textarea:focus {
@@ -230,7 +225,6 @@
     }
     .info { font-size: 1.25rem; line-height: 1.8; }
     .info p { margin: 1.2rem 0; }
-
     footer {
       text-align: center;
       padding: 3rem 5%;
@@ -238,7 +232,6 @@
       border-top: 1px solid #2a2a5a;
       font-size: 0.95rem;
     }
-
     @media (max-width: 900px) {
       .contact-grid { grid-template-columns: 1fr; }
       .pricing-grid { grid-template-columns: 1fr; }
@@ -294,7 +287,6 @@
 <section id="wycena" class="pricing-section">
   <div class="container">
     <h2>Orientacyjna wycena </h2>
-
     <div class="pricing-grid">
       <div class="pricing-card">
         <h3>Landing page / One-page </h3>
@@ -313,7 +305,6 @@
         <div class="price">od 1000 zł <small>netto</small></div>
       </div>
     </div>
-
     <p style="text-align:center; font-size:1.3rem; opacity:0.8; margin-top:2rem;">
       Ceny orientacyjne – dokładna wycena po rozmowie
     </p>
@@ -323,16 +314,15 @@
 <section id="kontakt">
   <div class="container">
     <h2>Porozmawiajmy o Twoim projekcie</h2>
-
     <div class="contact-card">
       <div class="contact-grid">
         <form action="https://formspree.io/f/xrekgkoq" method="POST">
           <input type="text" name="name" placeholder="Imię / nazwa firmy" required>
           <input type="email" name="_replyto" placeholder="Twój email" required>
           <input type="tel" name="phone" placeholder="Telefon (opcjonalnie)">
-          <textarea 
-            name="message" 
-            placeholder="Opisz projekt... Co chcesz osiągnąć? Jaki klimat/styl Cię kręci? Jakie strony podobają Ci się najbardziej? (możesz wkleić linki)" 
+          <textarea
+            name="message"
+            placeholder="Opisz projekt... Co chcesz osiągnąć? Jaki klimat/styl Cię kręci? Jakie strony podobają Ci się najbardziej? (możesz wkleić linki)"
             required
           ></textarea>
           <input type="hidden" name="_subject" value="Nowa wiadomość z Strony.11 – lead!">
@@ -342,7 +332,6 @@
             Wiadomość wysłana! 🚀 Odpiszę najszybciej jak się da – zazwyczaj w ciągu 1-4 godzin.
           </div>
         </form>
-
         <div class="info">
           <h3>Szybki kontakt</h3>
           <p>📩 michal.strony11@gmail.com</p>
@@ -362,12 +351,10 @@
 </footer>
 
 <script>
-
 const canvas = document.getElementById('bg-canvas');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth; canvas.height = window.innerHeight;
 window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; });
-
 class Particle {
   constructor() { this.reset(); }
   reset() {
@@ -393,12 +380,9 @@ class Particle {
 const particles = []; for (let i = 0; i < 200; i++) particles.push(new Particle());
 function animate() { ctx.clearRect(0,0,canvas.width,canvas.height); particles.forEach(p => {p.update(); p.draw();}); requestAnimationFrame(animate); }
 animate();
-
-
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => { e.preventDefault(); document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'}); });
 });
-
 const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('section');
 window.addEventListener('scroll', () => {
@@ -412,8 +396,6 @@ window.addEventListener('scroll', () => {
   });
   document.getElementById('header').classList.toggle('scrolled', window.scrollY > 100);
 });
-
-
 document.querySelector('form').addEventListener('submit', function() {
   setTimeout(() => {
     document.getElementById('success-msg').style.display = 'block';
@@ -421,7 +403,5 @@ document.querySelector('form').addEventListener('submit', function() {
   }, 1400);
 });
 </script>
-
 </body>
-
 </html>
